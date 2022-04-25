@@ -1,4 +1,69 @@
- <script>
+      <div class="row">
+      	<div class="col-md-12">
+      		<div class="tile">
+      			<h3 class="tile-title">mstServiceAgreement List</h3>
+      			<div class="tile-footer">
+      				<a href="<?= base_url('/Mst_service_agreement/ins_view'); ?>">
+      					<button class="btn btn-primary my-3" type="button">
+      						<i class="fa fa-fw fa-lg fas fa-plus-circle "></i>New
+      					</button>
+      				</a>
+      			</div>
+      			<div class="tile-body">
+      				<!-- TABLE -->
+      				<div class="table-responsive">
+      					<table class="table table-hover table-bordered" id="mstServiceAgreement">
+      						<thead>
+      							<tr>
+      								<th>Doc Id</th>
+      								<th>Data Type</th>
+      								<th>Company Name</th>
+      								<th>Doc No</th>
+      								<th>Client Name</th>
+      								<th>Contract Title</th>
+      								<th>Contract No</th>
+      								<th>Amount</th>
+      								<th>Explanation</th>
+      								<th>Start Period</th>
+      								<th>Expired Period</th>
+      								<th>Filename</th>
+      								<th>Edit</th>
+      							</tr>
+      						</thead>
+      						<tbody>
+      							<!-- <tr> -->
+      							<!-- <td>doc_id</td> -->
+      							<!-- <td>data_type</td> -->
+      							<!-- <td>company_name</td> -->
+      							<!-- <td>doc_no</td> -->
+      							<!-- <td>client_name</td> -->
+      							<!-- <td>contract_title</td> -->
+      							<!-- <td>contract_no</td> -->
+      							<!-- <td>amount</td> -->
+      							<!-- <td>explanation</td> -->
+      							<!-- <td>start_period</td> -->
+      							<!-- <td>expired_period</td> -->
+      							<!-- <td>file_remarks</td> -->
+      							<!-- <td>file_original</td> -->
+      							<!-- <td>finished_project</td> -->
+      							<!-- <td>filename</td> -->
+      							<!-- <td>remarks</td> -->
+      							<!-- <td>upload_time</td> -->
+      							<!-- <td>pic_input</td> -->
+      							<!-- <td>input_time</td> -->
+      							<!-- <td>pic_edit</td> -->
+      							<!-- <td>edit_time</td> -->
+      							<!-- <td>Link Edit</td> -->
+      							<!-- </tr> -->
+      						</tbody>
+      					</table>
+      				</div>
+      			</div>
+      		</div> <!-- class="tile" -->
+      	</div> <!-- class="col-md-12" -->
+      </div> <!-- class="row" -->
+      <!-- ***Using Valid js Path -->
+<script>
       	$(document).ready(function() {
       		var baseUrl = '<?php echo base_url() ?>';
       		/* START AJAX FOR LOAD DATA */
